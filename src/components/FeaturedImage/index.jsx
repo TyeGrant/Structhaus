@@ -44,7 +44,7 @@ export const FeaturedImage = () => {
           </div>
           <div className="flex w-full flex-row justify-end sm:justify-center text-right">
                 <Text
-              className="mt-[19px] text-deep_orange-400 text-xl"
+              className="mt-[19px] text-deep_orange-400 text-xl cursor-pointer"
               size="txtCriteriaCFMedium20"
               onClick={() => navigate('/projects')}
             >

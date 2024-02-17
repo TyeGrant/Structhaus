@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Img, Input, Line, Text, TextArea, ContactForm, Hero } from "components";
+import { Img, Text, ContactForm, Hero } from "components";
 import Footer from "components/Footer";
 import HeaderBar1 from "components/HeaderBar1";
 
@@ -237,8 +237,8 @@ const ProjectsPage = () => {
             />
           </div>
         </div>
-        <div className="bg-deep_orange-400 flex flex-col items-end justify-start w-full">
-          <div className="flex md:flex-col flex-row gap-10 items-center justify-end w-full">
+        <div className="flex flex-col items-end justify-start w-full">
+          <div className="flex md:flex-col flex-row items-center w-full">
             <ContactForm method="post" />
           </div>
         </div>

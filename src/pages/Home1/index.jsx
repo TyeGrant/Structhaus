@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import { registerDeviceAuth } from "service/api";
 
-import { Button, Img, Input, Text, TextArea, ContactForm, Hero, About, FeaturedImage } from "components";
+import { Img, Text, ContactForm, Hero, About, FeaturedImage } from "components";
 
 import Footer from "components/Footer";
 import HeaderBar1 from "components/HeaderBar1";
@@ -96,8 +96,8 @@ const Home1Page = () => {
         </div>
         <About />
         <FeaturedImage />
-        <div className="bg-deep_orange-400 flex flex-col items-end justify-start w-full">
-          <div className="flex md:flex-col flex-row gap-10 items-center justify-end w-full">
+        <div className="flex flex-col items-end justify-start w-full">
+          <div className="flex md:flex-col flex-row items-center w-full">
             <ContactForm method="post" />
           </div>
         </div>

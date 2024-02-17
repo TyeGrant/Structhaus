@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { Button, Img, Input, Line, Text, TextArea, Hero, ContactForm, About } from "components";
+import { Img, Text, Hero, ContactForm, About } from "components";
 import Footer from "components/Footer";
 import HeaderBar1 from "components/HeaderBar1";
 
@@ -73,10 +73,9 @@ const ServicesPage = () => {
             </div>
           </div>
         </div>
-        <div className="bg-deep_orange-400 flex flex-col items-end justify-start md:pl-10 pl-40 sm:pl-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[38px] items-center justify-end w-full">
-          <ContactForm method="post" />
-          
+        <div className="flex flex-col items-end justify-start w-full">
+          <div className="flex md:flex-col flex-row items-center w-full">
+            <ContactForm method="post" />
           </div>
         </div>
         <Footer className="bg-yellow-50 flex font-plain items-center justify-center md:px-5 w-full" />

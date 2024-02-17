@@ -1,5 +1,5 @@
 import React from "react"
-import { Button, Img, Input, Text, TextArea } from "components";
+import { Button, Input, Text, TextArea } from "components";
 
 const submit = () => {
         console.log("submitted")
@@ -8,9 +8,10 @@ const submit = () => {
 export const ContactForm = (props) => {
     return (
         <>
-        
-          <div className="flex flex-col md:p-8 items-start justify-start sm:p-8 md:w-full">
-              <Text
+          <div className="bg-deep_orange-400 w-1/2 h-[870px] sm:h-[1120px] sm:w-full">
+            <div className="flex flex-col md:p-8 items-start p-10 justify-start sm:p-8 md:w-full">
+              <div className="sm:w-11/12">
+                <Text
                 className="sm:text-3xl md:text-4xl text-4xl text-white-A700"
                 size="txtCriteriaCFMedium40"
               >
@@ -25,38 +26,39 @@ export const ContactForm = (props) => {
                   </>
                 </span>
               </Text>
-              <div class="form">
+              </div>
+              <div class="sm:w-11/12 form max-w-lg">
                 <form action="/inc/action.php" method={props.method}>
                   <input type="text" name="form_type" value="contact_form"   class="form_type" style={{display: 'none'}}></input>
                   <div className="flex md:flex-col flex-row items-center gap-3 sm:justify-start sm:items-left justify-between mt-[59px] w-full">
                 <Input
-                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 text-xl"
+                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
                   size="txtCriteriaCFRegular20" type="text" name="name" wrapClassName="w-2/4 sm:w-full"  placeholder="Name"
                 />
                 <Input
-                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 text-xl"
+                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
                   size="txtCriteriaCFRegular20" type="email" name="email" wrapClassName="w-2/4 sm:w-full"  placeholder="Email"
                 />
               </div>
-                  <div className="flex md:flex-col flex-row md:gap-[50px] items-center gap-3 justify-between mt-[23px] w-full">
+                  <div className="flex md:flex-col flex-row items-center gap-3 justify-between mt-[23px] w-full">
                 <Input
-                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 text-xl"
+                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
                   size="txtCriteriaCFRegular20" type="text" name="phone" wrapClassName="w-2/4 sm:w-full" placeholder="Phone Number"
                 />
                 <Input
-                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 text-xl"
+                  className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
                   size="txtCriteriaCFRegular20" type="text" name="location" wrapClassName="w-2/4 sm:w-full" placeholder="Location"
                 />
               </div>
-               <div className="flex md:flex-col flex-row md:gap-[50px] items-center justify-between mt-[23px] w-full h-60">
+               <div className="flex md:flex-col flex-row items-center justify-between mt-[23px] w-full h-60">
                 <TextArea
-                className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 text-xl w-full h-full"
+                className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900 w-full h-full"
                 name="message"
                 placeholder="Your message"
               ></TextArea>
                </div>
               <Button
-                className="common-pointer cursor-pointer font-bold leading-[normal] min-w-[250px] mt-[55px] md:text-2xl text-3xl text-center"
+                className="common-pointer cursor-pointer font-bold leading-[normal] min-w-[250px] mt-[55px] text-center"
                 type="submit"
               >
                 Submit{" "}
@@ -65,7 +67,9 @@ export const ContactForm = (props) => {
               </div>
               
             </div>
-            <div className="bg-red-700 flex flex-col items-start sm:w-full justify-start sm:items-center sm:justify-center p-[53px] md:px-10 sm:px-5">
+          </div>
+            <div className="bg-red-700 w-1/2 h-[870px] sm:w-full">
+              <div className="flex flex-col items-start sm:w-full justify-start sm:items-center sm:justify-center p-[53px] md:px-10 sm:px-5">
               <Text
                 className="sm:text-center sm:w-11/12 mb-[267px] mt-[185px] text-white-A700 text-xl sm:text-lg"
                 size="txtCriteriaCFMedium20WhiteA700"
@@ -86,6 +90,7 @@ export const ContactForm = (props) => {
                   structhausconstruction@gmail.com
                 </>
               </Text>
+            </div>
             </div>
             </>
     )

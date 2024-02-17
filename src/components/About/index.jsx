@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Img, Input, Text} from "components";
+import { Img, Text} from "components";
 
 export const About = () => {
     return (
@@ -37,53 +37,53 @@ export const About = () => {
               />
               </div>
             </div>
-            <div className="flex md:flex-col flex-row gap-0.5 md:gap-0.5 sm:mt-1 items-center justify-between mt-[52px] w-full">
+            <div className="flex md:flex-col flex-row gap-2 md:gap-0.5 sm:mt-1 items-center justify-between mt-[52px] w-full">
               <div
-                className="cursor-pointer font-semibold text-xl sm:text-base text-slate-50 text-center bg-red-700 p-5"
+                className="cursor-pointer font-semibold flex-1 text-xl sm:text-base text-slate-50 text-center bg-red-700 p-5"
               >
                 <>Value Engineering</>
               </div>
               <div
-                className="cursor-pointer font-semibold text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-2 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
                 <>Renovations and Interior Design</>
               </div>
                <div
-                className="cursor-pointer font-semibold text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-3 text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
               >
                 <>Real Estate Development</>
               </div>
             </div>
-            <div className="flex sm:mt-1 sm:flex-col flex-row gap-0.5 sm:gap-1 items-center justify-between mt-[45px] w-full">
+            <div className="flex sm:mt-1 sm:flex-col flex-row gap-2 sm:gap-1 items-center justify-between mt-[45px] w-full">
               <div
-                className="cursor-pointer font-semibold text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+                className="cursor-pointer font-semibold text-xl text-center flex-1 sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
                 <>Project Management & Supervision</>
               </div>
               <div
-                className="cursor-pointer font-semibold text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-2 text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
               >
                 <>Budget Management</>
               </div>
               <div
-                className="cursor-pointer font-semibold text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-3 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
                 <>Quality Assurance</>
               </div>
             </div>
-            <div className="flex sm:mt-1 md:flex-col flex-row gap-0.5 items-center justify-between mt-[45px] w-full">
+            <div className="flex sm:mt-1 md:flex-col flex-row gap-2 items-center justify-between mt-[45px] w-full">
               <div
-                className="cursor-pointer font-semibold text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
+                className="cursor-pointer font-semibold text-xl sm:text-base flex-1 text-center bg-red-700 p-5 text-slate-50"
               >
                 <>Contract Management</>
               </div>
               <div
-                className="cursor-pointer font-semibold text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-2 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
                 <>Schedule Management</>
               </div>
               <div
-                className="cursor-pointer font-semibold text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
+                className="cursor-pointer font-semibold flex-3 text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
               >
                 <>Lower Cost Construction</>
               </div>

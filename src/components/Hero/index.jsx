@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Img, Input, Text } from "../index";
+import { Button, Img, Text } from "../index";
 
 import { isHomePage } from 'utils'
 
