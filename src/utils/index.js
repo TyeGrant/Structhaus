@@ -11,3 +11,17 @@ export const handleSectionNavigation = (id) => {
     behavior: "smooth",
   });
 };
+
+export const isHomePage = (page = "") => {
+  /**
+   * get current page pathname
+   * @return boolean
+   */
+  const loc = window.location.pathname
+  if(loc !== page && loc !== '/'){
+    return false
+  }else{
+  return true
+  }
+  
+}

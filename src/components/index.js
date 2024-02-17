@@ -4,3 +4,7 @@ export { Input } from "./Input";
 export { Line } from "./Line";
 export { Text } from "./Text";
 export { TextArea } from "./TextArea";
+export { ContactForm } from "./ContactForm"
+export { Hero } from "./Hero"
+export { About } from './About'
+export { FeaturedImage } from './FeaturedImage'

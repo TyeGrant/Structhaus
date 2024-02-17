@@ -11,15 +11,18 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div className="flex flex-col items-center justify-center mb-64 ml-[155px] mr-[179px] mt-[37px] w-[78%]">
-          <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
-            <div className="flex md:flex-1 flex-col gap-8 items-start justify-start w-[39%] md:w-full">
+          <div className="flex flex-col gap-10 items-left justify-between w-full">
+            <div className="flex flex-row items-start justify-start w-full">
               <Img
                 className="h-[135px] ml-1 md:ml-[0]"
                 src="images/img_logo1.svg"
                 alt="logoOne"
               />
-              <Text
-                className="leading-[26.00px] text-black-900 text-xl"
+            </div>
+            <div className="flex flex-row gap-16 justify-start sm:flex-col w-full">
+              <div className="w-1/2 sm:w-full">
+                <Text
+                className="leading-[26.00px] text-black-900 text-l text-justify"
                 size="txtPlainLightRegular20"
               >
                 <>
@@ -35,25 +38,16 @@ const Footer = (props) => {
                   completion, lower costs, and higher quality standards.
                 </>
               </Text>
-            </div>
-            <div className="flex md:flex-1 flex-col gap-[19px] justify-start w-[52%] md:w-full">
-              <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
+              </div>
+              <div className="flex flex-col items-left justify-start w-1/3 sm:w-full">
                 <Text
-                  className="md:text-3xl sm:text-[28px] text-[32px] text-deep_orange-400"
+                  className="text-l text-deep_orange-400 font-bold"
                   size="txtPlainBoldRegular32"
                 >
                   Contact Info
                 </Text>
                 <Text
-                  className="capitalize md:text-3xl sm:text-[28px] text-[32px] text-deep_orange-400"
-                  size="txtPlainBoldRegular32"
-                >
-                  Quick Links
-                </Text>
-              </div>
-              <div className="flex sm:flex-col flex-row gap-[52px] items-start justify-start ml-1.5 md:ml-[0] w-[83%] md:w-full">
-                <Text
-                  className="text-black-900 text-xl"
+                  className="text-black-900 text-l pt-5"
                   size="txtInterRegular20"
                 >
                   <>
@@ -69,10 +63,21 @@ const Footer = (props) => {
                     structhausconstruction@gmail.com
                   </>
                 </Text>
-                <ul className="flex flex-col gap-[21px] items-start justify-start sm:mt-0 mt-[7px] md:w-full common-column-list">
+              </div>
+              <div className="flex flex-col items-left justify-start w-1/3 sm:w-full">
+                <div>
+                  <Text
+                  className="text-l text-deep_orange-400 font-bold"
+                  size="txtPlainBoldRegular32"
+                >
+                  Quick Links
+                </Text>
+                </div>
+                <div className="pt-5">
+                  <ul className="flex flex-col gap-2 items-start justify-start common-column-list">
                   <li>
                     <Text
-                      className="common-pointer text-black-900 text-xl"
+                      className="common-pointer text-black-900 text-l"
                       size="txtInterRegular20"
                       onClick={() => navigate("/")}
                     >
@@ -81,7 +86,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text
-                      className="text-black-900 text-xl"
+                      className="text-black-900 text-l"
                       size="txtInterRegular20"
                     >
                       About
@@ -89,7 +94,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text
-                      className="common-pointer text-black-900 text-xl"
+                      className="common-pointer text-black-900 text-l"
                       size="txtInterRegular20"
                       onClick={() => navigate("/services")}
                     >
@@ -98,7 +103,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text
-                      className="common-pointer text-black-900 text-xl"
+                      className="common-pointer text-black-900 text-l"
                       size="txtInterRegular20"
                       onClick={() => navigate("/projects")}
                     >
@@ -106,6 +111,7 @@ const Footer = (props) => {
                     </Text>
                   </li>
                 </ul>
+                </div>
               </div>
             </div>
           </div>

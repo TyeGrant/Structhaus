@@ -10,39 +10,62 @@ const HeaderBar1 = (props) => {
   return (
     <>
       <header className={props.className}>
-        <Img
-          className="h-[98px] md:h-auto mb-[15px] sm:ml-[0] ml-[155px] sm:mt-0 mt-[58px] object-cover w-[11%] sm:w-full"
+        <div className={`header-wrapper items-center w-3/4 sm:w-11/12 ${props.headerWrapperClassName}`}>
+          <div  className="mt-4 mb-4 w-full">
+          <div className="flex">
+          <Img
+          className="object-cover w-[30%] sm:w-[50%] sm:m-auto cursor-pointer"
           src="images/img_struchauslog1.png"
           alt="struchauslogOne"
+          onClick={() => navigate('/')}
         />
-        <Text
-          className="common-pointer mb-[49px] sm:ml-[0] ml-[465px] sm:mt-0 mt-24 text-black-900 text-xl"
-          size="txtCriteriaCFRegular20"
-          onClick={() => navigate("/about")}
+        </div>
+        </div>
+        <div className="mt-4 mb-4 w-full">
+          <div className="flex flex-row flex-wrap justify-end sm:justify-center">
+          <Text
+          className="common-pointer text-black-900 text-base p-2 hover:text-slate-50 hover:bg-deep_orange-400"
+          size="txtCriteriaCFRegular20" as="button"
+          onClick={(e) => {
+            e.target.classList.add('active:bg-deep_orange-400')
+            return navigate("/about")
+          }}
         >
           About{" "}
         </Text>
         <Text
-          className="common-pointer mb-[49px] sm:ml-[0] ml-[78px] sm:mt-0 mt-24 text-black-900 text-xl"
-          size="txtCriteriaCFRegular20"
-          onClick={() => navigate("/services")}
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50"
+          size="txtCriteriaCFRegular20" as="button"
+          onClick={(e) => {
+             e.target.classList.add('active:bg-deep_orange-400')
+            return navigate("/services")
+          }}
         >
           Service
         </Text>
         <Text
-          className="common-pointer mb-12 sm:ml-[0] ml-[61px] sm:mt-0 mt-[97px] text-black-900 text-xl"
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50" as="button"
           size="txtCriteriaCFRegular20"
-          onClick={() => navigate("/projects")}
+          onClick={(e) => {
+             e.target.classList.add('active:bg-deep_orange-400')
+            return navigate("/projects")
+          }}
         >
           Projects{" "}
         </Text>
         <Text
-          className="common-pointer mb-[51px] sm:ml-[0] ml-[63px] mr-[164px] sm:mt-0 mt-[94px] text-black-900 text-xl"
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50" as="button"
           size="txtCriteriaCFRegular20"
-          onClick={() => navigate("/contact")}
+          onClick={(e) => {
+             e.target.classList.add('active:bg-deep_orange-400')
+            return navigate("/contact")}
+          }
         >
           Contact{" "}
         </Text>
+        </div>
+        </div>
+        </div>
       </header>
     </>
   );
