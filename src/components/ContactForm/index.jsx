@@ -27,27 +27,27 @@ export const ContactForm = (props) => {
                 </span>
               </Text>
               </div>
-              <div class="sm:w-11/12 form max-w-lg">
-                <form action="/inc/action.php" method={props.method}>
-                  <input type="text" name="form_type" value="contact_form"   class="form_type" style={{display: 'none'}}></input>
+              <div class="sm:w-11/12 form w-full">
+                <form action="/inc/action.php" method={props.method} className="w-full">
+                  <input type="text" name="form_type" value="contact_form"   class="form_type" style={{display: 'none'}} />
                   <div className="flex md:flex-col flex-row items-center gap-3 sm:justify-start sm:items-left justify-between mt-[59px] w-full">
                 <Input
                   className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
-                  size="txtCriteriaCFRegular20" type="text" name="name" wrapClassName="w-2/4 sm:w-full"  placeholder="Name"
+                  size="txtCriteriaCFRegular20" type="text" name="name" wrapClassName="w-full sm:w-full"  placeholder="Name"
                 />
                 <Input
                   className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
-                  size="txtCriteriaCFRegular20" type="email" name="email" wrapClassName="w-2/4 sm:w-full"  placeholder="Email"
+                  size="txtCriteriaCFRegular20" type="email" name="email" wrapClassName="w-full sm:w-full"  placeholder="Email"
                 />
               </div>
                   <div className="flex md:flex-col flex-row items-center gap-3 justify-between mt-[23px] w-full">
                 <Input
                   className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
-                  size="txtCriteriaCFRegular20" type="text" name="phone" wrapClassName="w-2/4 sm:w-full" placeholder="Phone Number"
+                  size="txtCriteriaCFRegular20" type="text" name="phone" wrapClassName="w-full sm:w-full" placeholder="Phone Number"
                 />
                 <Input
                   className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"
-                  size="txtCriteriaCFRegular20" type="text" name="location" wrapClassName="w-2/4 sm:w-full" placeholder="Location"
+                  size="txtCriteriaCFRegular20" type="text" name="location" wrapClassName="w-full sm:w-full" placeholder="Location"
                 />
               </div>
                <div className="flex md:flex-col flex-row items-center justify-between mt-[23px] w-full h-60">
@@ -71,11 +71,11 @@ export const ContactForm = (props) => {
             <div className="bg-red-700 w-1/2 h-[870px] sm:w-full">
               <div className="flex flex-col items-start sm:w-full justify-start sm:items-center sm:justify-center p-[53px] md:px-10 sm:px-5">
               <Text
-                className="sm:text-center sm:w-11/12 mb-[267px] mt-[185px] text-white-A700 text-xl sm:text-lg"
+                className="sm:text-center sm:w-11/12 mb-[267px] mt-[185px] text-white-A700 text-xl sm:text-sm"
                 size="txtCriteriaCFMedium20WhiteA700"
               >
                 <>
-                  <span className="text-3xl font-bold">CONTACT</span>
+                  <span className="text-3xl sm:text-sm font-bold">CONTACT</span>
                   <br />
                   <br />
                   Suite 16B 2nd Floor, <br />

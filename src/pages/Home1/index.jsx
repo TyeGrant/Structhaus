@@ -57,7 +57,7 @@ const Home1Page = () => {
         heroImgBgClassName="h-[1072px] inset-x-[0] mx-auto sm:h-full"
         heroText1={<HeroText1 />}
         />
-        <div className="flex flex-col items-center justify-start max-w-[1147px] sm:mt-80 mx-auto p-[29px] md:px-5 w-full">
+        <div className="flex flex-col items-center justify-start max-w-[1147px] sm:mt-96 mx-auto p-[29px] md:px-5 w-full">
           <div className="flex flex-col gap-[33px] items-center justify-start mb-4 w-[85%] md:w-full">
             <Text
               className="md:text-3xl sm:text-[28px] text-[32px] text-gray-400"

@@ -21,7 +21,7 @@ export const Hero = (props) => {
               style={{ backgroundImage: "url('images/img_group23.svg')" }}
             >
               <Text
-                className="mb-[127px] p-10 mt-2 sm:text-2xl md:text-3xl text-5xl text-white-A700"
+                className="mb-[127px] p-10 mt-2 sm:text-xl md:text-2xl text-5xl text-white-A700"
                 size="txtCriteriaCFBold50"
               >
                 <>
@@ -30,7 +30,7 @@ export const Hero = (props) => {
               </Text>
             </div><br />
             <div>
-<Button className={`cursor-pointer font-bold leading-[normal] text-2xl text-center ` + props.heroBtnClassName}>
+<Button className={`cursor-pointer font-bold leading-[normal] text-2xl text-center sm:text-sm ` + props.heroBtnClassName}>
               Get in touch
             </Button>
             </div>
@@ -55,7 +55,7 @@ const HeroPart3 = (props) => {
         <div className={`absolute bg-deep_orange-400 bottom-[0] flex flex-col inset-x-[0] items-center justify-end mx-auto sm:mt-20 sm:relative p-[42px] md:px-10 sm:px-5 w-[79%] ` + props.heroPart3Class}>
             <div className="flex flex-col gap-2.5 items-start justify-start w-[78%] md:w-full">
               <Text
-                className="sm:text-2xl md:text-3xl text-4xl text-center text-white-A700 w-[95%] sm:w-full"
+                className="sm:text-xl md:text-3xl text-4xl text-center text-white-A700 w-[95%] sm:w-full"
                 size="txtCriteriaCFRegular40"
               >
                 <span className="text-white-A700 font-criteriacf font-normal">
@@ -71,10 +71,10 @@ const HeroPart3 = (props) => {
               </Text>
               <div className="flex gap-32 sm:flex-col pt-5 pb-5 sm:items-center flex-row sm:gap-8 items-start justify-center w-full">
                 <Text
-                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3"
+                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3 sm:text-xl"
                   size="txtCriteriaCFRegular64"
                 >
-                  <span className="text-white-A700 font-criteriacf font-bold text-4xl">
+                  <span className="text-white-A700 font-criteriacf font-bold">
                     10+
                   </span><br className="p-0" />
                   <span className="text-white-A700 font-criteriacf text-base text-base font-bold">
@@ -82,10 +82,10 @@ const HeroPart3 = (props) => {
                   </span>
                 </Text>
                 <Text
-                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3"
+                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3 sm:text-xl"
                   size="txtCriteriaCFRegular64"
                 >
-                  <span className="text-white-A700 font-criteriacf font-bold text-4xl">
+                  <span className="text-white-A700 font-criteriacf font-bold">
                     10+
                   </span><br className="p-0" />
                   <span className="text-white-A700 font-criteriacf text-base text-base font-bold">
@@ -93,13 +93,13 @@ const HeroPart3 = (props) => {
                   </span>
                 </Text>
                 <Text
-                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3"
+                  className="sm:mt-0 mt-2 text-center text-white-A700 leading-3 sm:text-xl"
                   size="txtCriteriaCFRegular64"
                 >
-                  <span className="text-white-A700 font-criteriacf font-bold text-4xl">
+                  <span className="text-white-A700 font-criteriacf font-bold">
                     10+
                   </span><br className="p-0" />
-                  <span className="text-white-A700 font-criteriacf text-base text-base font-bold">
+                  <span className="text-white-A700 font-criteriacf text-base font-bold">
                     Experience
                   </span>
                 </Text>

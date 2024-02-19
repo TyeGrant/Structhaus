@@ -24,7 +24,7 @@ const HeaderBar1 = (props) => {
         <div className="mt-4 mb-4 w-full">
           <div className="flex flex-row flex-wrap justify-end sm:justify-center">
           <Text
-          className="common-pointer text-black-900 text-base p-2 hover:text-slate-50 hover:bg-deep_orange-400"
+          className="common-pointer text-black-900 text-base p-2 hover:text-slate-50 sm:text-sm hover:bg-deep_orange-400"
           size="txtCriteriaCFRegular20" as="button"
           onClick={(e) => {
             e.target.classList.add('active:bg-deep_orange-400')
@@ -34,7 +34,7 @@ const HeaderBar1 = (props) => {
           About{" "}
         </Text>
         <Text
-          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50"
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 sm:text-sm hover:text-slate-50"
           size="txtCriteriaCFRegular20" as="button"
           onClick={(e) => {
              e.target.classList.add('active:bg-deep_orange-400')
@@ -44,7 +44,7 @@ const HeaderBar1 = (props) => {
           Service
         </Text>
         <Text
-          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50" as="button"
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 sm:text-sm hover:text-slate-50" as="button"
           size="txtCriteriaCFRegular20"
           onClick={(e) => {
              e.target.classList.add('active:bg-deep_orange-400')
@@ -54,7 +54,7 @@ const HeaderBar1 = (props) => {
           Projects{" "}
         </Text>
         <Text
-          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 hover:text-slate-50" as="button"
+          className="common-pointer text-black-900 text-base p-2 hover:bg-deep_orange-400 sm:text-sm hover:text-slate-50" as="button"
           size="txtCriteriaCFRegular20"
           onClick={(e) => {
              e.target.classList.add('active:bg-deep_orange-400')
