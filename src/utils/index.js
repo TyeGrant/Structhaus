@@ -12,13 +12,13 @@ export const handleSectionNavigation = (id) => {
   });
 };
 
-export const isHomePage = (page = "") => {
+export const isHomePage = () => {
   /**
    * get current page pathname
    * @return boolean
    */
   const loc = window.location.pathname
-  if(loc !== page && loc !== '/'){
+  if(loc !== '' && loc !== '/'){
     return false
   }else{
   return true

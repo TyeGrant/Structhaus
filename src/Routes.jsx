@@ -7,7 +7,9 @@ const Projects = React.lazy(() => import("pages/Projects"));
 const Services = React.lazy(() => import("pages/Services"));
 const About = React.lazy(() => import("pages/About"));
 const Home1 = React.lazy(() => import("pages/Home1"));
+
 const ProjectRoutes = () => {
+
   return (
     <React.Suspense fallback={<>Loading...</>}>
       <Router>

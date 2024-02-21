@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Button, Img, Text } from "../index";
 
 import { isHomePage } from 'utils'
 
 export const Hero = (props) => {
+
+const [homepage, checkHomepage] = useState(isHomePage())
+
+useEffect(() => {
+console.log('homepage: ', homepage)
+})
+
     return (
       
         <div className={`md:px-5 relative w-full ` + props.heroWrapperClassName}>
@@ -39,7 +46,7 @@ export const Hero = (props) => {
           </div>
           <div className="row">
            <div className="col-1">
-            { HomePage ? (<HeroPart3 />) : "" }
+            { homepage ? (<HeroPart3 />) : "" }
            </div>
             </div>
         </div>
@@ -47,7 +54,7 @@ export const Hero = (props) => {
     )
 }
 
-const HomePage = isHomePage('/')
+const HomePage = isHomePage()
 
 const HeroPart3 = (props) => {
     
