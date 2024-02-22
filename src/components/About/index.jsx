@@ -9,7 +9,7 @@ export const About = () => {
               <div className="flex-1">
                 <div className="flex flex-col md:gap-10 gap-5 items-start justify-start">
                 <Text
-                  className="md:ml-[0] ml-[5px] text-5xl mb-5 sm:text-4xl text-red-700"
+                  className="md:ml-[0] ml-[5px] text-5xl mb-5 sm:text-3xl text-red-700"
                   size="txtCriteriaCFBold48"
                 >
                   <>

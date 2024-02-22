@@ -28,7 +28,7 @@ export const ContactForm = (props) => {
               </Text>
               </div>
               <div class="sm:w-11/12 form w-full">
-                <form action="/inc/action.php" method={props.method} className="w-full">
+                <form action="/inc/action" method={props.method} className="w-full">
                   <input type="text" name="form_type" value="contact_form"   class="form_type" style={{display: 'none'}} />
                   <div className="flex md:flex-col flex-row items-center gap-3 sm:justify-start sm:items-left justify-between mt-[59px] w-full">
                 <Input

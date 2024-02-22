@@ -58,7 +58,7 @@ const AboutPage = () => {
               <div className="flex flex-col md:gap-10 gap-[88px] items-center justify-start w-full">
               <div className="flex sm:flex-col flex-row md:gap-10 gap-[92px] items-start justify-start w-full">
                 <Text
-                  className="md:text-5xl text-4xl text-deep_orange-400"
+                  className="md:text-4xl text-4xl text-deep_orange-400"
                   size="txtCriteriaCFRegular64Deeporange400"
                 >
                   Our Vison

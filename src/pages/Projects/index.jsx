@@ -48,7 +48,7 @@ const ProjectsPage = () => {
                   </>
                 </Text>
                 <div className="md:gap-5 gap-[27px] grid sm:grid-cols-1 md:grid-cols-3 grid-cols-6 justify-center min-h-[auto] w-full">
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-start p-[39px] sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-start p-[39px] sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="my-[29px] sm:text-2xl md:text-[26px] text-[28px] text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -56,7 +56,7 @@ const ProjectsPage = () => {
                       Roads
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 flex-col items-center justify-start p-[37px] sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 flex-col items-center justify-start p-[37px] sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="my-[31px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
                       Hotels
                     </Text>
                   </div>
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-start p-[29px] sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-start p-[29px] sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="my-[39px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -72,7 +72,7 @@ const ProjectsPage = () => {
                       Estates
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 flex-col items-center justify-start p-3.5 rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 sm:p-4 flex-col items-center justify-start p-3.5 rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] mb-7 mt-[45px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -84,7 +84,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-end sm:items-center justify-start p-[17px] rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 sm:p-4 flex-col items-end sm:items-center justify-start p-[17px] rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[33px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -96,7 +96,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 sm:items-center flex-col items-end justify-start p-[21px] sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 sm:items-center flex-col items-end justify-start p-[21px] sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="my-[47px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -104,7 +104,7 @@ const ProjectsPage = () => {
                       Tilt Wall
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 sm:items-center flex-col items-end justify-center p-8 sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 sm:items-center flex-col items-end justify-center p-8 sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[18px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -115,7 +115,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-center p-[23px] sm:px-5 rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-center p-[23px] sm:p-4 rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[27px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -127,7 +127,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 flex-col items-center justify-center p-[19px] rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 flex-col items-center sm:p-4 justify-center p-[19px] rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[31px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -139,7 +139,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-center p-[19px] rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 sm:p-4 flex-col items-center justify-center p-[19px] rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[31px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -151,7 +151,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-red-700 flex flex-1 flex-col items-center justify-start p-[5px] rounded-[20px] w-full">
+                  <div className="bg-red-700 flex flex-1 sm:p-4 flex-col items-center justify-start p-[5px] rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[27px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"
@@ -164,7 +164,7 @@ const ProjectsPage = () => {
                       </>
                     </Text>
                   </div>
-                  <div className="bg-deep_orange-400 flex flex-1 flex-col items-center justify-center p-[13px] rounded-[20px] w-full">
+                  <div className="bg-deep_orange-400 flex flex-1 sm:p-4 flex-col items-center justify-center p-[13px] rounded-[20px] w-full">
                     <Text
                       className="leading-[36.00px] my-[45px] sm:text-2xl md:text-[26px] text-[28px] text-center text-white-A700"
                       size="txtCriteriaCFDemiBold28"

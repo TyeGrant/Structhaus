@@ -57,32 +57,32 @@ const Home1Page = () => {
         heroImgBgClassName="h-[1072px] inset-x-[0] mx-auto sm:h-full"
         heroText1={<HeroText1 />}
         />
-        <div className="flex flex-col items-center justify-start max-w-[1147px] sm:mt-96 mx-auto p-[29px] md:px-5 w-full">
+        <div className="flex flex-col items-center justify-start max-w-[1147px] sm:mt-[90%] mx-auto p-[29px] md:px-5 w-full">
           <div className="flex flex-col gap-[33px] items-center justify-start mb-4 w-[85%] md:w-full">
             <Text
-              className="md:text-3xl sm:text-[28px] text-[32px] text-gray-400"
+              className="md:text-4xl sm:text-3xl text-5xl text-gray-400"
               size="txtCriteriaCFLight32"
             >
               Top Clientele
             </Text>
             <div className="flex md:flex-col gap-16 flex-row md:gap-10 items-center justify-center w-full">
               <Img
-                className="h-[116px] md:h-auto object-cover sm:object-contain w-[200px]"
+                className="h-[116px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
                 src="images/img_cbn1.png"
                 alt="cbnOne"
               />
               <Img
-                className="h-[65px] md:h-auto object-cover sm:object-contain w-[200px]"
+                className="h-[65px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
                 src="images/img_centerpoint.png"
                 alt="centerpoint"
               />
               <Img
-                className="h-[105px] md:h-auto object-cover sm:object-contain w-[200px]"
+                className="h-[105px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
                 src="images/img_house20201.png"
                 alt="house20201"
               />
               <Img
-                className="h-[74px] md:h-auto object-cover sm:object-contain w-[200px]"
+                className="h-[74px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
                 src="images/img_demes.png"
                 alt="demes"
               />
