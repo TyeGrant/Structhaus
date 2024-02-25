@@ -83,7 +83,7 @@ const ContactPage = () => {
         </div>
         <div className="flex flex-col items-end justify-start w-full">
           <div className="flex md:flex-col flex-row items-center w-full">
-            <ContactForm method="post" />
+            <ContactForm action="/inc/index" method="post" />
           </div>
         </div>
         <Footer className="bg-yellow-50 flex font-plain items-center justify-center md:px-5 w-full" />

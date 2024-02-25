@@ -1,6 +1,6 @@
 <?php
 
-require_once base_root() . '/index.php';
+// require_once base_root() . '/index.php';
 
 require_once base_root() . '/inc/global.php';
 
@@ -41,8 +41,6 @@ function isForm ()
 
     $data = array();
 
-// print_r($_POST);
-   
     foreach( $_POST as $_key => $_value) {
         
         $filtered_key = strtolower(str_replace("-", "_", str_replace(" ", "_", filterForm($_key))));
@@ -97,6 +95,7 @@ function filterForm ($data)
 
 function process_form ($data)
 {
+    Loader();
     insert_query($data);
 }
 

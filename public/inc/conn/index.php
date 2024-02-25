@@ -111,15 +111,13 @@ $query = "USE ${db}";
 
 }
 
-function insert_query($data)
+function insert_query($data, $mail_script = "")
 {
  $db_conn = $GLOBALS['db_conn'];
 
     $col = $val = array();
 
     $db = current_database();
-
-    // var_dump($_POST['form_type']);
 
     if ( $db !== true && $db === null ){
 
@@ -150,7 +148,6 @@ foreach( $data as $key => $value) {
 
 }
 
-
     $create_table = create_table($form_type, $col, $val);
  
 
@@ -174,37 +171,72 @@ foreach( $data as $key => $value) {
         die("Something went wrong, please try again.");
     }
 
-
     if( ! connection_close()) {
         die("There's an issue with your connection, please refresh and try again.");
     }
 
+    $email = "";
+    $message = "";
+    $pathanme = $GLOBALS['pathname'];
+
+    $email_pattern = "/[a-zA-Z0-9!\$_-]*@[a-zA-Z]*.[a-zA-Z]*/";
+
+   $message_pattern = "/^message/";
+
+     $multi_array_ind1 = array_values($data);
+
+     foreach($data as $value){
+        foreach($value as $k => $v){
+            // print_r($v);
+             $match_email = preg_match_all($email_pattern, $v, $match);
+             if($match_email){
+                // print_r($match);
+                $email .= $match[0][0];
+             }
+
+            if($k !== 'form_type'){
+                $message = $k . ": " . $v . "\r\n";
+            }
+
+            if($k === 'pathname'){
+               
+                if(! empty($v) && $v !== 'inc/undefined' && $v !== '/') {
+                  Global $pathname;
+                  $pathname = base_uri().$v;
+                }else{
+                  Global $pathname;
+                  $pathname = '/';
+                }
+               
+            }
+            //  $match_message = preg_match_all($message_pattern, $k, $message_match);
+
+            //  if($match_message)
+            //    $message .= $v[$message_match[0][0]];
+
+        }
+     }
+
+   
     $from = "enquiry@segunmayor.com";
-    $subject = ucwords(str_replace("_", " ", $data['form_type']));
+    $subject = ucwords(str_replace("_", " ", $data[0]['form_type']));
 
-    if($data['form_type'] === "contact_form") {
-        send_mail($data['email'], $from, $subject, $data['message'] );
-    }else if($data['form_type'] === "call_back_form"){
-        $message = "Name: " . $data['name'] . "\r\n" . "Email: " . $data['email'] . "\r\n" . "Phone: " . $data['phone'];
-
-        send_mail($data['email'], $from, $subject, $message );
-    }else {
-
-        $message = "This user has successfully subscribed to our promotional email newletter." . "\r\n" . "Email: " . $data['email'];
-
-        send_mail($data['email'], $from, $subject, $message );
-
+    if($data[0]['form_type'] !== "") {
+        send_mail($email, $from, $subject, $message );
     }
 
-    // var_dump($form_type);
+    if($mail_script !== "" && gettype($mail_script) === string){
+        echo $mail_script;
+    }
 
     $script = '<script src="assets/js/vendor/form.js"></script>';
     $script .= '<script type="text/javascript" language="JavaScript">
-    setTimeout(() => formResponse(' . $form_type . '), 5000)
+    setTimeout(() => formResponse(\'' . $form_type . '\'), 5000)
     </script>';
     $script .= '<script src="assets/js/custom.js"></script>';
     $script .= '<script type="text/javascript" language="JavaScript">
-    setTimeout(() => runDialog()
+    
+    setTimeout(() => runDialog(\'' . $pathname . '\')
 , 10000)
     </script>';
     // $script = '<script type="text/javascript" language="JavaScript">

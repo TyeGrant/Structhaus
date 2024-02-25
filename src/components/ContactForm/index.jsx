@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Button, Input, Text, TextArea } from "components";
 
 const submit = () => {
@@ -6,6 +6,15 @@ const submit = () => {
     }
 
 export const ContactForm = (props) => {
+
+  const [pathname, setPathname ] = useState()
+
+  useEffect(() => {
+    const current_pathname = window.location.pathname
+    console.log(current_pathname)
+    setPathname(current_pathname)
+  })
+
     return (
         <>
           <div className="bg-deep_orange-400 w-1/2 h-[870px] sm:h-[1120px] sm:w-full">
@@ -28,8 +37,9 @@ export const ContactForm = (props) => {
               </Text>
               </div>
               <div class="sm:w-11/12 form w-full">
-                <form action="/inc/action" method={props.method} className="w-full">
+                <form action={props.action} method={props.method} className="w-full">
                   <input type="text" name="form_type" value="contact_form"   class="form_type" style={{display: 'none'}} />
+                  <input type="text" name="pathname" value={pathname} class="pathname" style={{display: 'none'}} />
                   <div className="flex md:flex-col flex-row items-center gap-3 sm:justify-start sm:items-left justify-between mt-[59px] w-full">
                 <Input
                   className="bg-white-A700 h-[88px] justify-center pb-5 pt-[35px] sm:px-5 text-black-900"

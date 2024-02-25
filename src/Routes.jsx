@@ -21,7 +21,7 @@ const ProjectRoutes = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/dhiwise-dashboard" element={<Home />} />
-          <Route path="/inc/action" element={"/inc/action.php"} />
+          <Route path="/inc/index" element={"/inc/index.php"} />
         </Routes>
       </Router>
     </React.Suspense>
