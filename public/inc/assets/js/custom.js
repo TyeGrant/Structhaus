@@ -6,8 +6,6 @@ function runDialog (pathname)
 
 const dialog = document.querySelector('dialog')
 
-console.log('dialog dialog: ', dialog)
-
 if(dialog !== null)
 {
    
@@ -39,11 +37,10 @@ function loader()
     const loaderClass = document.createAttribute('CLASS')
     loaderClass.value = 'loader'
     loaderStyle = document.createAttribute('STYLE')
-    loaderStyle.value = 'width: 50%; height: 50%; border-radius:50%; background: #eee'
+    loaderStyle.value = 'margin: 0 auto; width: 50%; height: 50%; border-radius:50%; background: #eee'
     loader.innerHTML = 'LOADING...'
     loader.setAttributeNode(loaderClass)
 
-   console.log('loader', loader)
 }
 
 window.addEventListener('load', loader )

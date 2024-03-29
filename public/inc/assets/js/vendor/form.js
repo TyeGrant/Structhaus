@@ -14,7 +14,7 @@ function formResponse (form_type = 'contact_form') {
     dialogClass.value = "dialog-box"
     spanNode.setAttributeNode(dialogAttr);
     spanNode.setAttributeNode(dialogClass);
-    const spanTextNode = document.createTextNode("Sent");
+    const spanTextNode = document.createTextNode("Message Sent! Click ok to continue");
     spanNode.appendChild(spanTextNode);
     const form = document.createElement("FORM");
     const form_attr = document.createAttribute("method");
@@ -23,6 +23,9 @@ function formResponse (form_type = 'contact_form') {
     const form_button = document.createElement("BUTTON");
     form.setAttributeNode(form_attr);
     form_button.appendChild(form_text);
+    const formButtonStyle = document.createAttribute('style')
+    formButtonStyle.value = "width: 100px; height: 50px; cursor: pointer"
+    form_button.setAttributeNode(formButtonStyle)
     const spanNodeStyle = document.createAttribute("style")
     spanNodeStyle.value = "z-index: 999; top: 50%; background-color: #fff; position: fixed; text-align: center; color: #000; display: block; padding: 1rem";
     spanNode.setAttributeNode(spanNodeStyle)

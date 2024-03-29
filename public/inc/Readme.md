@@ -1,0 +1,1 @@
+Pathname: create a name input field on the form and set the value to pathname. Also set the value of the input field to pathname as well as the class

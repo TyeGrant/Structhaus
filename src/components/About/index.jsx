@@ -1,5 +1,5 @@
 import React from 'react'
-import { Img, Text} from "components";
+import { Img, Text} from "components"
 
 export const About = () => {
     return (
@@ -19,8 +19,7 @@ export const About = () => {
                 </Text>
                 <Text
                   className="text-justify leading-10 text-3xl sm:text-xl text-black-900 w-full"
-                  size="txtCriteriaCFLight30"
-                >
+                  size="txtCriteriaCFLight30">
                   We offer a high level of expertise and attention to detail.
                   Our team is dedicated to your satisfaction, you can rest easy
                   knowing your project is in the right hands, because we are
@@ -33,19 +32,16 @@ export const About = () => {
                 <Img
                 className="w-auto h-auto md:h-auto sm:hidden object-cover"
                 src="images/img_bg11.png"
-                alt="bgEleven"
-              />
+                alt="bgEleven" />
               </div>
             </div>
             <div className="flex md:flex-col flex-row gap-2 md:gap-0.5 sm:mt-1 items-center justify-between mt-[52px] w-full">
               <div
-                className="cursor-pointer font-semibold flex-1 text-xl sm:text-base text-slate-50 text-center bg-red-700 p-5"
-              >
+                className="cursor-pointer font-semibold flex-1 text-xl sm:text-base text-slate-50 text-center bg-red-700 p-5">
                 <>Value Engineering</>
               </div>
               <div
-                className="cursor-pointer font-semibold flex-2 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
-              >
+                className="cursor-pointer font-semibold flex-2 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50">
                 <>Renovations and Interior Design</>
               </div>
                <div
@@ -56,9 +52,14 @@ export const About = () => {
             </div>
             <div className="flex sm:mt-1 sm:flex-col flex-row gap-2 sm:gap-1 items-center justify-between mt-[45px] w-full">
               <div
+                className="cursor-pointer font-semibold flex-3 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+              >
+                <>Quality Assurance</>
+              </div>
+              <div
                 className="cursor-pointer font-semibold text-xl text-center flex-1 sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
-                <>Project Management & Supervision</>
+                <>Project Mgmt. & Supervision</>
               </div>
               <div
                 className="cursor-pointer font-semibold flex-2 text-xl sm:text-base text-center bg-red-700 p-5 text-slate-50"
@@ -66,9 +67,9 @@ export const About = () => {
                 <>Budget Management</>
               </div>
               <div
-                className="cursor-pointer font-semibold flex-3 text-xl text-center sm:text-base bg-deep_orange-400 p-5 text-slate-50"
+                className="cursor-pointer font-semibold text-xl text-center flex-1 sm:text-base bg-deep_orange-400 p-5 text-slate-50"
               >
-                <>Quality Assurance</>
+                <>Luxury Furn./Fin.</>
               </div>
             </div>
             <div className="flex sm:mt-1 md:flex-col flex-row gap-2 items-center justify-between mt-[45px] w-full">
