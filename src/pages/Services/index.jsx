@@ -45,29 +45,29 @@ const ServicesPage = () => {
             <div className="flex sm:flex-col flex-row md:gap-10 items-end md:justify-center md:items-center justify-between mt-[60px] w-full">
               <Img
                 className="h-[200px] md:h-auto mb-11 object-contain md:w-[150px] sm:w-[100px]"
-                src="images/img_cbn1_220x166.png"
+                src="images/img_cbn1_220x166.gif"
                 alt="cbnOne"
               />
               <Img
                 className="h-[154px] md:h-auto mb-11 sm:mt-0 mt-[66px] object-cover md:w-[150px] sm:w-[100px]"
-                src="images/img_centerpoint1.png"
+                src="images/img_centerpoint1.gif"
                 alt="centerpointOne"
               />
               <Img
                 className="h-[247px] md:h-auto sm:mt-0 mt-[17px] object-cover md:w-[150px] sm:w-[100px]"
-                src="images/img_hotel20201.png"
+                src="images/img_hotel20201.gif"
                 alt="hotel20201"
               />
             </div>
             <div className="flex md:flex-col flex-row md:gap-10 md:justify-center md:items-center items-start justify-between mt-[52px] w-[95%] md:w-full">
               <Img
                 className="h-[301px] md:h-auto object-cover md:w-[150px] sm:w-[100px]"
-                src="images/img_solida1.png"
+                src="images/img_solida1.gif"
                 alt="solidaOne"
               />
               <Img
                 className="h-[194px] md:h-auto md:mt-0 mt-[77px] object-cover md:w-[150px] sm:w-[100px]"
-                src="images/img_demes1.png"
+                src="images/img_demes1.gif"
                 alt="demesOne"
               />
             </div>

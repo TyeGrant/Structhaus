@@ -52,7 +52,7 @@ const Home1Page = () => {
         <HeaderBar1 headerWrapperClassName="flex sm:flex-col flex-row m-auto" className="sm:gap-5 items-center sm:mt-2 justify-center md:px-5 w-full" />
         {/* Hero section */}
         <Hero
-        bgImg="images/img_homebg1.png" 
+        bgImg="images/img_homebg1.gif" 
         heroWrapperClassName="md:h-[1072px] sm:h-[800px] h-[1163px]"
         heroImgBgClassName="h-[1072px] inset-x-[0] mx-auto sm:h-full"
         heroText1={<HeroText1 />}
@@ -68,12 +68,12 @@ const Home1Page = () => {
             <div className="flex md:flex-col gap-16 flex-row md:gap-10 items-center justify-center w-full">
               <Img
                 className="h-[116px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
-                src="images/img_cbn1.png"
+                src="images/img_cbn1.gif"
                 alt="cbnOne"
               />
               <Img
                 className="h-[65px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
-                src="images/img_centerpoint.png"
+                src="images/img_centerpoint.gif"
                 alt="centerpoint"
               />
               <Img
@@ -83,7 +83,7 @@ const Home1Page = () => {
               />
               <Img
                 className="h-[74px] md:h-auto object-cover sm:object-contain w-[200px] md:w-[150px] sm:w-[100px]"
-                src="images/img_demes.png"
+                src="images/img_demes.gif"
                 alt="demes"
               />
               <Img

@@ -9,5 +9,7 @@ RewriteRule ^([^\.]+)$ /index.html [NC,L]
 RewriteRule ^(.*)/$ /$1 [NC,L]
 </IfModule>
 
+<IfModule {mod_php7,mod_php8}.c>
 php_value include_path "."
 php_value auto_prepend_file "/var/www/projects/tygrants/Structhaus/functions.php"
+</IfModule>

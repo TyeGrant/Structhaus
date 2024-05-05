@@ -113,7 +113,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center sm:relative sm:mt-[50rem] justify-start p-[21px] sm:px-auto w-full">
+        {/* <div className="flex flex-col items-center sm:relative sm:mt-[50rem] justify-start p-[21px] sm:px-auto w-full">
           <div className="flex flex-col items-center sm:items-start justify-start max-w-[1149px] mb-[11px] mx-auto md:px-5 w-3/4 sm:w-11/12">
             <Text
               className="sm:text-3xl md:text-[46px] text-4xl text-black-900 text-center sm:text-left"
@@ -225,7 +225,7 @@ const AboutPage = () => {
             </div>
            </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col items-end justify-start w-full">
           <div className="flex md:flex-col flex-row items-center w-full">
             <ContactForm action="/inc/index" method="post" />
